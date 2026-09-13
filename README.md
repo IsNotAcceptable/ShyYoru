@@ -21,7 +21,7 @@
 
 #### Step 1 - Download files
 
- - [Download](https://github.com/IsNotAcceptable/ShyYoru/archive/refs/heads/main.zip) and unzip theme files
+ - [Download](https://github.com/IsNotAcceptable/ShyYoru/archive/refs/heads/Yoru-main.zip) and unzip theme files
 
 #### Step 2 - Configure extensions
 
