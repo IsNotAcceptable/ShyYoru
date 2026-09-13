@@ -3,7 +3,7 @@
 <div>
  <a href='https://github.com/IsNotAcceptable/ShyYoru/stargazers'><img src='https://img.shields.io/github/stars/IsNotAcceptable/ShyYoru?style=social'></a>
  <a href='https://www.mozilla.org'><img src="https://img.shields.io/badge/Firefox-130-orange?logo=firefox"></a>
- <a href='https://github.com/IsNotAcceptable/ShyYoru/commits'><img src="https://img.shields.io/github/last-commit/IsNotAcceptable/ShyYoru/main"></a>
+ <a href='https://github.com/IsNotAcceptable/ShyYoru/commits'><img src="https://img.shields.io/github/last-commit/IsNotAcceptable/ShyYoru/Yoru-main"></a>
 
 </div>
 
