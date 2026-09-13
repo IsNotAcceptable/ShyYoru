@@ -30,6 +30,37 @@ Styles for new tab
     border: 1px solid var(--shy-color) !important;
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--shy-color) 20%, transparent) !important;
   }
+
+  .search-wrapper, 
+  content-search-handoff-ui {
+    --content-search-handoff-ui-background-color: transparent !important;
+    --box-shadow-level-3: none !important;
+  }
+
+  .search-wrapper .search-inner-wrapper,
+  content-search-handoff-ui .search-handoff-button {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    box-shadow: none !important;
+  }
+
+  .search-wrapper .search-inner-wrapper:hover,
+  content-search-handoff-ui .search-handoff-button:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(255, 255, 255, 0.7) !important;
+  }
+
+  .search-wrapper .search-inner-wrapper:focus-within {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-color: #00ddff !important;
+    box-shadow: 0 0 5px rgba(0, 221, 255, 0.5) !important;
+  }
+
+  .search-wrapper input,
+  .search-handoff-button .fake-editable {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
   
   /* rounded corners */
   .top-site-button,
@@ -81,6 +112,15 @@ Styles for new tab
   .context-menu-item{
     padding-inline: 5px !important;
     padding-block: 1px !important;
+  }
+
+  /* icon */ 
+  .logo {
+    display: none !important;
+  }
+
+  .wordmark {
+    display: none !important;
   }
   
   /* search box */
