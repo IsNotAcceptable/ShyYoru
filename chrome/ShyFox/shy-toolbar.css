@@ -265,6 +265,10 @@ Tab bar has been transformed into vertical toolbar on the right side of the wind
       & > *:not(.titlebar-buttonbox-container), #TabsToolbar-customization-target > * {opacity: 1 !important;}
     }
     #TabsToolbar{
+      top: calc(var(--margin) + var(--top-margin)) !important;
+      bottom: calc(var(--margin) + var(--bottom-margin)) !important;
+      height: calc(100vh - (var(--margin) * 2) - var(--top-margin) - var(--bottom-margin)) !important;
+
       width: calc(var(--toolbar-button-wdt) + 4px) !important;
       padding-right: 0px !important;
       
@@ -272,12 +276,28 @@ Tab bar has been transformed into vertical toolbar on the right side of the wind
       
       border: var(--outline) !important;
       outline: var(--shadow) !important;
+
+      border-radius: var(--big-rounding) !important;
       
       &::after{opacity: 0}
     }
+
+    #TabsToolbar-customization-target {
+      position: relative !important;
+      top: 0px !important;
+      margin-top: calc(var(--toolbar-item-hgt) * 2 + 5px) !important;
+      justify-content: flex-start !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
     
-    #PanelUI-menu-button,
+    #PanelUI-menu-button {
+      top: calc(var(--margin) + var(--top-margin) + 2px) !important;
+      margin-right: 2px !important;
+    }
+    
     #unified-extensions-button{
+      top: calc(var(--margin) + var(--top-margin) + var(--toolbar-item-hgt) + 2px) !important;
       margin-right: 2px !important;
     }
   }
