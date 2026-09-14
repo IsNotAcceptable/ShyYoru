@@ -11,7 +11,7 @@
 
 <div align="center">
 
- <img width="50%" alt="Screenshot_5" src="https://github.com/user-attachments/assets/6167e858-656c-4606-b6ef-98d12f0b856a" />
+ <img width="70%" alt="image" src="https://github.com/user-attachments/assets/dddc01df-bc06-4890-9194-48d6c2070648" />
 
 </div>
 
