@@ -26,6 +26,10 @@ Styles for new tab
     background-color: var(--shy-color) !important;
   }
   
+  .search-inner-wrapper {
+    display: none !important;
+  }
+
   .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button {
     border: 1px solid var(--shy-color) !important;
     box-shadow: 0 0 0 2px color-mix(in srgb, var(--shy-color) 20%, transparent) !important;

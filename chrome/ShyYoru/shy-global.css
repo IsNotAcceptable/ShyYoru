@@ -24,7 +24,7 @@ Area where website is displayed
 }
 
 /* completely remove the browser interface in fullscreen videos and popups like login with Google or in a floating Bitwarden window */
-#main-window:is(:not([chromehidden=""]), [inDOMFullscreen="true"]){
+#main-window:is([chromehidden]:not([chromehidden=""]), [inDOMFullscreen="true"]){
   #navigator-toolbox {display: none !important;}
   --margin: 0px !important;
 }
@@ -563,7 +563,7 @@ File Edit View History Bookmarks Tools Help
 #tabbrowser-tabbox{z-index: 1 !important;}
 
 /* border fix */
-* {
+:root:not([canedittoolbar]) *:not(html):not(body):not(iframe) {
   border: 0px solid transparent; 
   outline: 0px solid transparent;
 }

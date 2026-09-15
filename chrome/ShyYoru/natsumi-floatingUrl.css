@@ -1,0 +1,170 @@
+/* Floating URLBar - Ported from Natsumi Browser */
+@keyframes floating-urlbar-appear {
+  0% {
+    scale: 0.95;
+    backdrop-filter: blur(0);
+  }
+  100% {
+    scale: 1;
+    backdrop-filter: blur(10px);
+  }
+}
+
+@keyframes floating-urlbar-appear-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#urlbar[open] {
+  position: fixed !important;
+  top: 25vh !important;
+  left: 50% !important;
+  width: 60% !important;
+  max-width: 900px !important;
+  transform: translateX(-50%) !important;
+  z-index: 10000 !important;
+  border-radius: 12px !important;
+  background: rgba(245, 245, 245, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15) !important;
+  animation: floating-urlbar-appear 0.3s ease !important;
+  animation-fill-mode: forwards !important;
+  --toolbar-field-background-color: transparent !important;
+  --toolbar-field-border-color: transparent !important;
+  color: #333 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] {
+    background: rgba(40, 40, 40, 0.98) !important;
+    --toolbar-field-text-color: #e0e0e0 !important;
+    color: #e0e0e0 !important;
+  }
+}
+
+#urlbar[open] .urlbar-input-container {
+  height: 48px !important;
+  padding: 0 12px !important;
+  animation: floating-urlbar-appear-opacity 0.3s ease !important;
+}
+
+#urlbar[open] #urlbar-input {
+  font-size: 18px !important;
+  text-align: center !important;
+  color: #333 !important;
+  background: transparent !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] #urlbar-input {
+    color: #e0e0e0 !important;
+  }
+}
+
+#urlbar[open] #urlbar-input::placeholder {
+  color: #999 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] #urlbar-input::placeholder {
+    color: #888 !important;
+  }
+}
+
+#urlbar[open] #tracking-protection-icon-container,
+#urlbar[open] #identity-box,
+#urlbar[open] #page-action-buttons,
+#urlbar[open] #trust-icon-container {
+  display: none !important;
+}
+
+#urlbar[open] #urlbar-results {
+  padding: 8px 0 !important;
+  margin-top: 8px !important;
+  border-radius: 12px !important;
+  background: rgba(245, 245, 245, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  max-height: 400px !important;
+  overflow-y: auto !important;
+  color: #333 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] #urlbar-results {
+    background: rgba(40, 40, 40, 0.98) !important;
+    color: #e0e0e0 !important;
+  }
+}
+
+#urlbar[open] .urlbarView-row {
+  margin: 4px 8px !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  background: transparent !important;
+  transition: background 0.15s ease !important;
+  color: #333 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] .urlbarView-row {
+    color: #e0e0e0 !important;
+  }
+}
+
+#urlbar[open] .urlbarView-row:hover,
+#urlbar[open] .urlbarView-row[selected] {
+  background: rgba(200, 200, 200, 0.03) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] .urlbarView-row:hover,
+  #urlbar[open] .urlbarView-row[selected] {
+    background: rgba(100, 100, 100, 0.4) !important;
+  }
+}
+
+#urlbar[open] .urlbarView-row .urlbarView-title {
+  color: #333 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] .urlbarView-row .urlbarView-title {
+    color: #e0e0e0 !important;
+  }
+}
+
+#urlbar[open] .urlbarView-row .urlbarView-url {
+  color: #0078d4 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] .urlbarView-row .urlbarView-url {
+    color: #5bb3e8 !important;
+  }
+}
+
+#urlbar[open] {
+  --toolbar-field-text-color: #333 !important;
+  --toolbar-field-focus-color: transparent !important;
+  --toolbar-field-border-color: transparent !important;
+  --urlbarView-highlight-color: rgba(200, 200, 200, 0.3) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #urlbar[open] {
+    --toolbar-field-text-color: #e0e0e0 !important;
+    --urlbarView-highlight-color: rgba(100, 100, 100, 0.4) !important;
+  }
+}
+
+#urlbar[open] #urlbar-background,
+#urlbar[open] .urlbar-background {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
